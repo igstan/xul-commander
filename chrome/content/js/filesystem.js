@@ -4,7 +4,7 @@
  * @see https://developer.mozilla.org/en/nsITreeView
  */
 var drive = {
-    rowCount : 100,
+    rowCount : 40,
 
     getCellText : function(row, column) {
         if (column.id === "name-col") {
