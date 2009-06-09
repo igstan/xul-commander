@@ -1,0 +1,3 @@
+content xul-commander content/
+skin xul-commander standard/1.0 skin/default/
+locale xul-commander en-US locale/en-US/

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://xul-commander/skin/default.css" type="text/css"?>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="XUL Commander"
+        sizemode="normal"
+        persist="sizemode,width,height,screenX,screenY"
+        width="600"
+        height="400"
+        id="main">
+
+    <!--
+    <commandset>
+     ...   (actions that can be triggered by user input)
+    </commandset>
+    <keyset>
+    ...   (keyboard shortcuts for various actions)
+    </keyset>
+    -->
+
+    <toolbox>
+        <menubar id="igs-main-menubar">
+            <menu label="Files">
+                <menupopup/>
+            </menu>
+            <menu label="Marks">
+                <menupopup/>
+            </menu>
+            <menu label="Commands">
+                <menupopup/>
+            </menu>
+            <menu label="Net">
+                <menupopup/>
+            </menu>
+            <menu label="Show">
+                <menupopup/>
+            </menu>
+            <menu label="Configuration">
+                <menupopup/>
+            </menu>
+            <menu label="Start">
+                <menupopup/>
+            </menu>
+            <spacer flex="1"/>
+            <menu label="Help">
+                <menupopup/>
+            </menu>
+        </menubar>
+        <toolbar>
+            <toolbarbutton tooltiptext="Reload" id="reload" label="Reload"/>
+            <toolbarseparator/>
+            <toolbarbutton tooltiptext="Home" id="home" label="Home"/>
+        </toolbar>
+    </toolbox>
+
+    <hbox flex="1">
+        <vbox flex="1">
+            <tabbox id="drives">
+                <tabs>
+                    <tab label="C:\" onfocus="blur();"/>
+                    <tab label="C:\Program Files\" onfocus="blur();"/>
+                </tabs>
+                <tabpanels>
+                    <tabpanel><!-- tabpanel First elements go here --></tabpanel>
+                    <tabpanel><!-- tabpanel Second elements go here --></tabpanel>
+                </tabpanels>
+            </tabbox>
+            
+        </vbox>
+        <splitter/>
+        <vbox flex="1">
+            <button label="No"/>
+        </vbox>
+    </hbox>
+
+    <statusbar>
+        <statusbarpanel id="statuspanel" flex="1"/>
+        <statusbarpanel id="textpos"/>
+        <statusbarpanel id="jsconsole"/>
+    </statusbar>
+</window>

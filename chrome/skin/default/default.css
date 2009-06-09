@@ -1,0 +1,11 @@
+@import url(chrome://global/skin/);
+
+#reload {
+  list-style-image: url(chrome://xul-commander/skin/icons/actions/reload.png);
+}
+#home {
+  list-style-image: url(chrome://xul-commander/skin/icons/actions/stock_home.png);
+}
+tab {
+ min-width: 50px;
+}
