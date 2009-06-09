@@ -9,3 +9,29 @@
 tab {
  min-width: 50px;
 }
+treechildren {
+  background: #808080;
+}
+treechildren::-moz-tree-row {
+  background-color: #808080;
+  border: none;
+}
+treechildren::-moz-tree-row(selected) {
+  background-color: #000;
+}
+treechildren::-moz-tree-cell-text,
+treecol {
+  font-weight: bold;
+  font-family: 'Microsoft Sans Serif';
+}
+treechildren::-moz-tree-cell-text(selected) {
+  color: #808080;
+}
+tabpanel, tree {
+  margin: 0;
+  padding: 0;
+}
+treechildren::-moz-tree-image(icon) {
+  margin-right: 3px;
+  list-style-image: url(chrome://xul-commander/skin/icons/filetypes/page.png);
+}
