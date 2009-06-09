@@ -15,7 +15,7 @@
     <script type="application/javascript;version=1.8">
     <![CDATA[
     var setView = function() {
-        document.getElementById("drive").view = drive;
+        document.getElementById("drive-1").view = drive;
     };
     
     window.addEventListener("DOMContentLoaded", function() {
@@ -74,32 +74,44 @@
 
     <hbox flex="1">
         <vbox flex="1">
-            <tabbox id="drives" flex="1">
+            <!-- <tabbox id="drives" flex="1">
                 <tabs>
                     <tab label="C:\" onfocus="blur();"/>
                     <tab label="C:\Program Files\" onfocus="blur();"/>
                 </tabs>
                 <tabpanels flex="1">
-                    <tabpanel>
-                        <tree id="drive" flex="1">
+                    <tabpanel> -->
+                        <tree id="drive-1" flex="1" enableColumnDrag="true" hidecolumnpicker="true">
                             <treecols>
-                                <treecol id="name-col" label="Name" flex="1"/>
-                                <treecol id="ext-col"  label="Ext"  flex="1"/>
-                                <treecol id="size-col" label="Size" flex="1"/>
-                                <treecol id="date-col" label="Date" flex="1"/>
-                                <treecol id="attr-col" label="Attr" flex="1"/>
+                                <treecol persist="width" id="name-col" label="Name" flex="1"/>
+                                <splitter class="tree-splitter"/>
+                                <treecol persist="width" id="ext-col"  label="Ext"  flex="1"/>
+                                <splitter class="tree-splitter"/>
+                                <treecol persist="width" id="size-col" label="Size" flex="1"/>
+                                <splitter class="tree-splitter"/>
+                                <treecol persist="width" id="date-col" label="Date" flex="1"/>
+                                <splitter class="tree-splitter"/>
+                                <treecol persist="width" id="attr-col" label="Attr" flex="1"/>
                             </treecols>
                             <treechildren/>
                         </tree>
-                    </tabpanel>
-                    <tabpanel><!-- tabpanel Second elements go here --></tabpanel>
+                    <!-- </tabpanel>
+                    <tabpanel/>
                 </tabpanels>
-            </tabbox>
-
+            </tabbox> -->
         </vbox>
         <splitter/>
         <vbox flex="1">
-            <button label="No"/>
+            <tree id="drive-2" flex="1">
+                <treecols>
+                    <treecol id="name-col" label="Name" flex="1"/>
+                    <treecol id="ext-col"  label="Ext"  flex="1"/>
+                    <treecol id="size-col" label="Size" flex="1"/>
+                    <treecol id="date-col" label="Date" flex="1"/>
+                    <treecol id="attr-col" label="Attr" flex="1"/>
+                </treecols>
+                <treechildren/>
+            </tree>
         </vbox>
     </hbox>
 
