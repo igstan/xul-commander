@@ -47,7 +47,14 @@ var drive = {
 
     getRowProperties: function(row, props) {},
 
-    getCellProperties: function(row, col, props) {},
+    getCellProperties: function(row, col, props) {
+        if (col.id === "name-col") {
+        var atomService = Components.classes["@mozilla.org/atom-service;1"]
+                                    .getService(Components.interfaces.nsIAtomService);
+        var atom = atomService.getAtom("icon");
+            props.AppendElement(atom);
+        }
+    },
 
     getColumnProperties: function(colid, col, props) {}
 };
