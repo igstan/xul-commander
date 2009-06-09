@@ -7,10 +7,17 @@ var drive = {
     rowCount : 40,
 
     getCellText : function(row, column) {
-        if (column.id === "name-col") {
-            return "Row " + row;
-        } else {
-            return "February 18";
+        switch (column.id) {
+            case "name-col":
+                return "index.php";
+            case "ext-col":
+                return "php";
+            case "size-col":
+                return "131";
+            case "date-col":
+                return "06/10/2009";
+            case "attr-col":
+                return "-a--";
         }
     },
 
