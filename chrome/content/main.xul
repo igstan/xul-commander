@@ -62,11 +62,22 @@
                     <tab label="C:\Program Files\" onfocus="blur();"/>
                 </tabs>
                 <tabpanels>
-                    <tabpanel><!-- tabpanel First elements go here --></tabpanel>
+                    <tabpanel>
+                        <tree id="my-tree" flex="1">
+                            <treecols>
+                                <treecol id="name-col" label="Name" flex="1"/>
+                                <treecol id="extc-ol"  label="Ext"  flex="1"/>
+                                <treecol id="size-col" label="Size" flex="1"/>
+                                <treecol id="date-col" label="Date" flex="1"/>
+                                <treecol id="attr-col" label="Attr" flex="1"/>
+                            </treecols>
+                            <treechildren/>
+                        </tree>
+                    </tabpanel>
                     <tabpanel><!-- tabpanel Second elements go here --></tabpanel>
                 </tabpanels>
             </tabbox>
-            
+
         </vbox>
         <splitter/>
         <vbox flex="1">
