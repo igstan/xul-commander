@@ -64,7 +64,7 @@
                         <menupopup>
                             <menuitem label="File list..." class="menuitem-iconic"/>
                             <menuitem label="File list with subdirs..." class="menuitem-iconic"/>
-                            <menuitem label="File contents..." key="print-key" class="menuitem-iconic"/>
+                            <menuitem label="File contents" key="print-key" class="menuitem-iconic"/>
                         </menupopup>
                     </menu>
                     <menuseparator/>
