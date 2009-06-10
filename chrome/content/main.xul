@@ -17,7 +17,7 @@
     var setView = function() {
         document.getElementById("drive-1").view = drive;
     };
-    
+
     window.addEventListener("DOMContentLoaded", function() {
         try {
             setView();
@@ -139,6 +139,10 @@
                             </treecols>
                             <treechildren/>
                         </tree>
+                        <statusbar>
+                            <progressmeter id="identifier" mode="determined" value="50"/>
+                            <label value="0 files / 5 dirs"/>
+                        </statusbar>
                     <!-- </tabpanel>
                     <tabpanel/>
                 </tabpanels>
@@ -156,12 +160,11 @@
                 </treecols>
                 <treechildren/>
             </tree>
+            <statusbar>
+                <statusbarpanel id="statuspanel" flex="1"/>
+                <statusbarpanel id="textpos"/>
+                <statusbarpanel id="jsconsole"/>
+            </statusbar>
         </vbox>
     </hbox>
-
-    <statusbar>
-        <statusbarpanel id="statuspanel" flex="1"/>
-        <statusbarpanel id="textpos"/>
-        <statusbarpanel id="jsconsole"/>
-    </statusbar>
 </window>
