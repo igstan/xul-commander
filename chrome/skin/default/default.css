@@ -38,3 +38,20 @@ treechildren::-moz-tree-image(icon) {
 #size-col {
   text-align: right;
 }
+
+.drive-harddisk {
+  font-weight: bold;
+  list-style-image: url(chrome://xul-commander/skin/icons/drive-harddisk.png);
+}
+.drive-cdrom {
+  font-weight: bold;
+  list-style-image: url(chrome://xul-commander/skin/icons/drive-cdrom.png);
+}
+.drive-removable {
+  font-weight: bold;
+  list-style-image: url(chrome://xul-commander/skin/icons/drive-removable-media.png);
+}
+.network {
+  font-weight: bold;
+  list-style-image: url(chrome://xul-commander/skin/icons/network-transmit-receive.png);
+}

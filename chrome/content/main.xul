@@ -106,6 +106,14 @@
             <toolbarseparator/>
             <toolbarbutton tooltiptext="Home" id="home" label="Home"/>
         </toolbar>
+        <toolbar id="drives">
+            <toolbarbutton class="drive-harddisk" tooltiptext="c" label="c" type="radio" group="drives" checked="true"/>
+            <toolbarbutton class="drive-harddisk" tooltiptext="d" label="d" type="radio" group="drives"/>
+            <toolbarbutton class="drive-harddisk" tooltiptext="e" label="e" type="radio" group="drives"/>
+            <toolbarbutton class="drive-cdrom" tooltiptext="f" label="f" type="radio" group="drives"/>
+            <toolbarbutton class="drive-removable" tooltiptext="g" label="g" type="radio" group="drives"/>
+            <toolbarbutton class="network" tooltiptext="\" label="\" type="radio" group="drives"/>
+        </toolbar>
     </toolbox>
 
     <hbox flex="1">
