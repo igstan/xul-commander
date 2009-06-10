@@ -35,3 +35,6 @@ treechildren::-moz-tree-image(icon) {
   margin-right: 3px;
   list-style-image: url(chrome://xul-commander/skin/icons/filetypes/page.png);
 }
+#size-col {
+  text-align: right;
+}
