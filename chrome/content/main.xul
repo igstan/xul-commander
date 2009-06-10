@@ -72,8 +72,8 @@
                     <menuitem label="Combine Files..." class="menuitem-iconic"/>
                     <menuitem label="Encode File (MIME,UUE,XXE)..." class="menuitem-iconic"/>
                     <menuitem label="Decode File (MIME,UUE,XXE,BinHex)..." class="menuitem-iconic"/>
-                    <menuitem label="Create CRC Checksums(SFV Format)..." class="menuitem-iconic"/>
-                    <menuitem label="Verify CRC Checksums(From SFV Files)" class="menuitem-iconic"/>
+                    <menuitem label="Create CRC Checksums (SFV Format)..." class="menuitem-iconic"/>
+                    <menuitem label="Verify CRC Checksums (From SFV Files)" class="menuitem-iconic"/>
                     <menuseparator/>
                     <menuitem label="Quit" key="quit-key" class="menuitem-iconic"/>
                 </menupopup>
