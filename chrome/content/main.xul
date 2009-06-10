@@ -40,7 +40,34 @@
     <toolbox>
         <menubar id="igs-main-menubar">
             <menu label="Files">
-                <menupopup/>
+                <menupopup>
+                    <menuitem label="Change Attributes..." class="menuitem-iconic"/>
+                    <menuitem label="Pack..." class="menuitem-iconic"/>
+                    <menuitem label="Unpack Specific Files..." class="menuitem-iconic"/>
+                    <menuitem label="Test Archive(s)" class="menuitem-iconic"/>
+                    <menuitem label="Compare By Content..." class="menuitem-iconic"/>
+                    <menuitem label="Associate With..." class="menuitem-iconic"/>
+                    <menuitem label="Properties..." class="menuitem-iconic"/>
+                    <menuitem label="Calculate Ocuppied Space..." class="menuitem-iconic"/>
+                    <menuitem label="Multi-Rename Tool..." class="menuitem-iconic"/>
+                    <menuitem label="Edit Comment..." class="menuitem-iconic"/>
+                    <menu label="Print">
+                        <menupopup>
+                            <menuitem label="File list..." class="menuitem-iconic"/>
+                            <menuitem label="File list with subdirs..." class="menuitem-iconic"/>
+                            <menuitem label="File contents..." class="menuitem-iconic"/>
+                        </menupopup>
+                    </menu>
+                    <menuseparator/>
+                    <menuitem label="Split File..." class="menuitem-iconic"/>
+                    <menuitem label="Combine Files..." class="menuitem-iconic"/>
+                    <menuitem label="Encode File (MIME,UUE,XXE)..." class="menuitem-iconic"/>
+                    <menuitem label="Decode File (MIME,UUE,XXE,BinHex)..." class="menuitem-iconic"/>
+                    <menuitem label="Create CRC Checksums(SFV Format)..." class="menuitem-iconic"/>
+                    <menuitem label="Verify CRC Checksums(From SFV Files)" class="menuitem-iconic"/>
+                    <menuseparator/>
+                    <menuitem label="Quit" class="menuitem-iconic"/>
+                </menupopup>
             </menu>
             <menu label="Marks">
                 <menupopup/>
