@@ -32,30 +32,39 @@
     <commandset>
      ...   (actions that can be triggered by user input)
     </commandset>
-    <keyset>
-    ...   (keyboard shortcuts for various actions)
-    </keyset>
     -->
+
+    <keyset>
+        <key id="pack-key" modifiers="alt" keycode="VK_F5"/>
+        <key id="unpack-key" modifiers="alt" keycode="VK_F9"/>
+        <key id="test-archive-key" modifiers="shift alt" keycode="VK_F9"/>
+        <key id="properties-key" modifiers="alt" keycode="VK_ENTER"/>
+        <key id="calc-space-key" modifiers="control" key="L"/>
+        <key id="multi-rename-key" modifiers="control" key="M"/>
+        <key id="edit-comment-key" modifiers="control" key="Z"/>
+        <key id="quit-key" modifiers="alt" keycode="VK_F4"/>
+        <key id="print-key" modifiers="control" keycode="VK_F9"/>
+    </keyset>
 
     <toolbox>
         <menubar id="igs-main-menubar">
             <menu label="Files">
                 <menupopup>
                     <menuitem label="Change Attributes..." class="menuitem-iconic"/>
-                    <menuitem label="Pack..." class="menuitem-iconic"/>
-                    <menuitem label="Unpack Specific Files..." class="menuitem-iconic"/>
-                    <menuitem label="Test Archive(s)" class="menuitem-iconic"/>
+                    <menuitem label="Pack..." key="pack-key" class="menuitem-iconic"/>
+                    <menuitem label="Unpack Specific Files..." key="unpack-key" class="menuitem-iconic"/>
+                    <menuitem label="Test Archive(s)" key="test-archive-key" class="menuitem-iconic"/>
                     <menuitem label="Compare By Content..." class="menuitem-iconic"/>
                     <menuitem label="Associate With..." class="menuitem-iconic"/>
-                    <menuitem label="Properties..." class="menuitem-iconic"/>
-                    <menuitem label="Calculate Ocuppied Space..." class="menuitem-iconic"/>
-                    <menuitem label="Multi-Rename Tool..." class="menuitem-iconic"/>
-                    <menuitem label="Edit Comment..." class="menuitem-iconic"/>
+                    <menuitem label="Properties..." key="properties-key" class="menuitem-iconic"/>
+                    <menuitem label="Calculate Ocuppied Space..." key="calc-space-key" class="menuitem-iconic"/>
+                    <menuitem label="Multi-Rename Tool..." key="multi-rename-key" class="menuitem-iconic"/>
+                    <menuitem label="Edit Comment..." key="edit-comment-key" class="menuitem-iconic"/>
                     <menu label="Print">
                         <menupopup>
                             <menuitem label="File list..." class="menuitem-iconic"/>
                             <menuitem label="File list with subdirs..." class="menuitem-iconic"/>
-                            <menuitem label="File contents..." class="menuitem-iconic"/>
+                            <menuitem label="File contents..." key="print-key" class="menuitem-iconic"/>
                         </menupopup>
                     </menu>
                     <menuseparator/>
@@ -66,7 +75,7 @@
                     <menuitem label="Create CRC Checksums(SFV Format)..." class="menuitem-iconic"/>
                     <menuitem label="Verify CRC Checksums(From SFV Files)" class="menuitem-iconic"/>
                     <menuseparator/>
-                    <menuitem label="Quit" class="menuitem-iconic"/>
+                    <menuitem label="Quit" key="quit-key" class="menuitem-iconic"/>
                 </menupopup>
             </menu>
             <menu label="Marks">
