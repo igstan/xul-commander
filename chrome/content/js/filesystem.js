@@ -1,3 +1,6 @@
+const CC = Components.classes;
+const CI = Components.interfaces;
+
 /**
  * Must implement nsITreeView
  *
@@ -49,9 +52,10 @@ var drive = {
 
     getCellProperties: function(row, col, props) {
         if (col.id === "name-col") {
-        var atomService = Components.classes["@mozilla.org/atom-service;1"]
-                                    .getService(Components.interfaces.nsIAtomService);
-        var atom = atomService.getAtom("icon");
+            var atom = CC["@mozilla.org/atom-service;1"]
+                        .getService(CI.nsIAtomService)
+                        .getAtom("icon");
+
             props.AppendElement(atom);
         }
     },
